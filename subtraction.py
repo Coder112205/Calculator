@@ -1,9 +1,5 @@
-def subtraction(a, b):
-    x = a - b
-    return x
+def subtraction(input1, input2):
+    result = input1 - input2
+    return result
 
-a = int(input())
-b = int(input())
-x = subtraction(a,b)
-
-print(x)
+print(result)
