@@ -4,19 +4,22 @@
     print(result)
 
 
-def subtraction(input1, input2):
+def subtraction(input1, input2, result):
     result = input1 - input2
     return result
     print(result)
 
-def multiplication(input1, input2):
+def multiplication(input1, input2, result):
     result = input1 * input2
+    return result
     print(result)
+
 def divide(input1, input2, result):
         if input2 == 0:
             raise ValueError("Cannot divide by zero.")
         else:
               result = input1 / input2
+        return result
         print(result)
 
 input1 = float(input("Enter the first number: "))
