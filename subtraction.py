@@ -1,5 +1,4 @@
-def subtraction(input1, input2):
+def subtraction(input1, input2, result):
     result = input1 - input2
     return result
-
-print(result)
+    print(result)
