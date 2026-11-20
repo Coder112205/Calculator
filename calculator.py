@@ -1,11 +1,36 @@
-a = input("Enter the first number: ")
-b = input("Enter the second number: ")
+﻿def addition(input1, input2, result):
+    result = input1 + input2
+    return result
+    print(result)
 
-    class divide:
-        def __init__(self, a, b):
-            if b == 0:
-                raise ValueError("Cannot divide by zero.")
-            self.a = a
-            self.b = b
 
-    print("The result of division is:", divide(a, b).a / divide(a, b).b)
+def subtraction(input1, input2):
+    result = input1 - input2
+    return result
+    print(result)
+
+def multiplication(input1, input2):
+    result = input1 * input2
+    print(result)
+def divide(input1, input2, result):
+        if input2 == 0:
+            raise ValueError("Cannot divide by zero.")
+        else:
+              result = input1 / input2
+        print(result)
+
+input1 = float(input("Enter the first number: "))
+input2 = float(input("Enter the second number: "))
+switch = input("Enter the operation (+, -, *, /): ")
+if switch == "+":
+    result = addition(input1, input2, 0)
+    print("The result of addition is:", result)
+elif switch == "-":
+    result = subtraction(input1, input2, 0)
+    print("The result of subtraction is:", result)
+elif switch == "*":
+    result = multiplication(input1, input2, 0)
+    print("The result of multiplication is:", result)
+elif switch == "/":
+    result = divide(input1, input2, 0)
+    print("The result of division is:", result) 
